@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: grid;
+    grid-template-areas: "Título Navegación";
+    grid-template-columns: 1fr 1fr;
+}
+
+
+header div{
+    grid-area: Título;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+}
+
+
+header div a{
+    text-decoration: none;
+    background-color:  rgb(87, 0, 168);
+}
+
+
+header div a h1{
+    color: white;
+    font-size: 5rem;
+}
+
+
+header nav{
+    grid-area: Navegación;
+    background-color: blueviolet;
+    height: 100%;
+}
+
+
+header nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5%;
+    padding: 4%;
+
+}
+
+
+header nav ul li{
+    list-style-type: none;
+    background-color: rgb(87, 0, 168);
+}
+
+
+header nav ul li a{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+main{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-areas:"Prod"
+                        "Servis";
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.section__prod{
+    grid-area: Prod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main section h2{
+    color: white;
+    font-size: 2rem;
+}
+
+
+main section section{
+    padding: 2%;
+}
+
+
+main section section a{
+    text-decoration: none;
+}
+
+
+main section section a img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+
+.section__servis{
+    grid-area: Servis;
+}
+
+
+footer{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-areas:"Redes Derechos Locales";
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.footer__section--redes{
+    grid-area: Redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+}
+
+
+footer section h3{
+    padding: 1%;
+    padding-left: 5%;
+    color: white;
+    font-size: 1rem;
+}
+
+
+footer section section a{
+    text-decoration: none;
+}
+
+
+footer section section a img{
+    width: 12%;
+    padding: 2%;
+    gap: 1%;
+}
+
+
+.footer__section--derechos{
+    grid-area: Derechos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer section p{
+    font-size: 1rem;
+    color: white;
+}
+
+
+.footer__section--locales{
+    grid-area: Locales;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+footer section h4{
+    color: white;
+    font-size: 1rem;
+    padding: 1%;
+    padding-right: 30%;
+}
+
+
+footer section section ul{
+    padding: 1%;
+    padding-right: 5%;
+}
+
+
+footer section section ul li{
+    padding: 1%;
+    list-style-type: none;
+    font-size: 1rem;
+    color: white;
+}
