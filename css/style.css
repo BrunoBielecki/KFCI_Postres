@@ -90,6 +90,11 @@ main section h2{
 }
 
 
+.main__títulos{
+    text-decoration: none;
+}
+
+
 main section section{
     padding: 2%;
 }
@@ -108,6 +113,47 @@ main section section a img{
 
 .section__servis{
     grid-area: Servis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main__section--grid{
+    display: grid;
+    grid-template-areas: "Envios Tienda";
+    grid-column: 1fr 1fr;
+    gap: 2%;
+}
+
+
+.main__section--envios{
+    background-color: rgb(120, 6, 226);
+    grid-area: Envios;
+    display: flex;
+}
+
+
+.main__section--tienda{
+    background-color: rgb(120, 6, 226);
+    grid-area: Tienda;
+    display: flex;
+}
+
+
+main section section section p{
+    padding: 5%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.5;
+}
+
+
+main section section section img{
+    width: 10%;
 }
 
 
@@ -129,7 +175,7 @@ footer{
 
 
 footer section h3{
-    padding: 1%;
+    padding: 5%;
     padding-left: 5%;
     color: white;
     font-size: 1rem;
@@ -186,8 +232,8 @@ footer section section ul{
 
 
 footer section section ul li{
-    padding: 1%;
     list-style-type: none;
     font-size: 1rem;
     color: white;
+    line-height: 1.5;
 }
