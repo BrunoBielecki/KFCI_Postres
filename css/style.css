@@ -14,7 +14,7 @@ header{
 
 header div{
     grid-area: Título;
-    background-color: blueviolet;
+    background-image: linear-gradient(blueviolet, violet);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -36,7 +36,7 @@ header div a h1{
 
 header nav{
     grid-area: Navegación;
-    background-color: blueviolet;
+    background-image: linear-gradient(blueviolet, violet);
     height: 100%;
 }
 
