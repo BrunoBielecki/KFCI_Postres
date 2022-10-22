@@ -185,6 +185,27 @@ main section h2{
 }
 
 
+.main__cat{
+    background-color:rgb(120, 6, 226);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+
+.main__cat--img{
+    width: 15%;
+}
+
+
+.main__cat--párrafo{
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 3%;
+}
+
+
 main section section section p{
     padding: 5%;
     font-size: 1rem;
@@ -196,7 +217,7 @@ main section section section p{
 
 
 main section section section img{
-    width: 10%;
+    width: 15%;
 }
 
 /*FOOTER*/
@@ -386,5 +407,7 @@ footer section section ul li{
 
 
 }
+
+
 
     
