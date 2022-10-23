@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./elementos/iconos/icono_favicon_gif.gif" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /-->
   </head>
   <body>
     <header>
       <div>
         <div class="icono">
           <a class="icono__header" href="./index.html">
-            <img class="icono__header--style" src="./elementos/iconos/icono_favicon.png" alt="">
+            <img class="icono__header--style wow flipInX" src="./elementos/iconos/icono_favicon.png" alt="">
           </a>
         </div>
         <div class="nombre">
@@ -27,46 +26,49 @@
       <nav>
           <ul>
               <li><a href="./index.html"> Inicio</a></li>
-              <li>
-                <a href="./pages/productos.html"> Productos</a>
-                <ul>
-                  <li><a href="./pages/catering.html"> Catering</a></li>
-                </ul>
-              </li>
+              <li><a href="./pages/productos.html"> Productos</a></li>
+              <li><a href="./pages/catering.html"> Catering</a></li>
               <li><a href="./pages/contactos.html"> Contactos</a></li>
               <li><a href="./pages/acerca_de_nosotros.html"> Acerca de Nosotros</a></li>
           </ul>            
       </nav>
     </header>
     <main>
-      <section class="section__prod">
-        <a class="main__títulos" href="./pages/productos.html">
-          <h2>Productos</h2>
-        </a>
-        <section class="main__img">
+      <section class="galeria__main">
+        <section class="galeria__main--style">
           <section>
-            <a href="./pages/productos.html">
-              <img class="main__img--style" src="./elementos/imagenes/Img_inicio_main.jpg" alt="">
+            <a class="main__títulos" href="./pages/productos.html">
+              <h2 class="main__títulos--style">Productos</h2>
+            </a>
+          </section>
+          <section>
+            <a  href="./pages/productos.html">
+              <img class="main__img--pro" src="./elementos/imagenes/Img_inicio_main.jpg" alt="">
+            </a>
+          </section>
+        </section>
+        <section class="galeria__main--style">
+          <section>
+            <a class="main__títulos" href="./pages/catering.html">
+              <h2 class="main__títulos--style">Catering</h2>
             </a>
           </section>
           <section>
             <a href="./pages/catering.html">
-              <img class="main__img--style" src="./elementos/imagenes/img_inicio_main_catering.jpg" alt="">
+              <img class="main__img--cat" src="./elementos/imagenes/img_inicio_main_01.jpg" alt="">
             </a>
           </section>
         </section>
       </section>
       <section class="section__servis">
-        <h2>Servicios</h2>
+        <h2 class="main__títulos--style">Servicios</h2>
         <section class="main__section--grid">
           <section class="main__section--envios">
-            <img src="./elementos/iconos/envios (1).png" alt="">
-            <p>Realizamos envios a todo el país.
-               En el horario de las 09hs hasta las 16hs.
-            </p>
+            <img class="main__envios--img" src="./elementos/iconos/envios (1).png" alt="">
+            <p>Realizamos envios a todo el país.En el horario de las 09hs hasta las 16hs.</p>
           </section>
           <section class="main__section--tienda">
-            <img src="./elementos/iconos/tienda.png" alt="">
+            <img class="main__tienda--img" src="./elementos/iconos/tienda.png" alt="">
             <p>Realiza tus compras en nuestra central ubicada en la calle anchoris al 1340 o en nuestro sitio oficial.</p>
           </section>
         </section>
@@ -78,8 +80,8 @@
     </main>
     <footer>
       <Section class="footer__section--redes">
-        <h3>Redes Sociales</h3>
-        <section class="wow flipInX">
+        <h4>Redes Sociales</h4>
+        <section class="logo__redes wow flipInX">
           <a href="https://www.facebook.com/"> 
             <img src="./elementos/iconos/facebook.png" alt=""> 
           </a>

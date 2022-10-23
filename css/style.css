@@ -108,42 +108,41 @@ main{
 }
 
 
-main section a h2{
-    color: white;
-    font-size: 2rem;
-    padding-top: 10%;
+.galeria__main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.galeria__main--style{
+    padding: 2%;
 }
 
 
 .main__títulos{
     text-decoration: none;
-}
-
-
-.main__img{
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-}
-
-
-.main__img--style{
-    width: 100%;
-}
-
-
-main section section{
+    text-align: center;
     padding: 2%;
 }
 
 
-main section section a{
-    text-decoration: none;
+.main__títulos--style{
+    color: white;
+    font-size: 2rem;
 }
 
 
-main section section a img{
+.main__img--pro{
     width: 100%;
+    border: double 10px black;
+    border-radius: 5%;
+}
+
+
+.main__img--cat{
+    width: 100%;
+    border: double 10px black;
     border-radius: 5%;
 }
 
@@ -157,16 +156,11 @@ main section section a img{
 }
 
 
-main section h2{
-    color: white;
-    font-size: 2rem;
-}
-
-
 .main__section--grid{
     display: grid;
     grid-template-areas: "Envios Tienda";
     grid-template-columns: 1fr 1fr;
+    padding: 2%;
     gap: 2%;
 }
 
@@ -175,6 +169,13 @@ main section h2{
     background-color: rgb(120, 6, 226);
     grid-area: Envios;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.main__envios--img{
+    padding: 2%;
 }
 
 
@@ -182,6 +183,13 @@ main section h2{
     background-color: rgb(120, 6, 226);
     grid-area: Tienda;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.main__tienda--img{
+    padding: 2%;
 }
 
 
@@ -196,6 +204,7 @@ main section h2{
 
 .main__cat--img{
     width: 15%;
+    padding: 2%;
 }
 
 
@@ -328,7 +337,7 @@ footer section section ul li{
 
     header nav{
         grid-area: Navegación;
-        background-image: linear-gradient(blueviolet, violet);
+        background-image: linear-gradient(violet, blueviolet);
         height: 100%;
     }
 
@@ -344,18 +353,37 @@ footer section section ul li{
     }
 
 
-    .main__img{
+    main{
+        background-image: linear-gradient(blueviolet, violet);
+        display: grid;
+        grid-template-areas:"Prod"
+                            "Servis";
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+
+    .galeria__main{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 
-    .main__img--style{
+    .main__img--pro{
         width: 100%;
-        padding: 2%;
+        border: double 10px black;
+        border-radius: 5%;
     }
-
-
+    
+    
+    .main__img--cat{
+        width: 100%;
+        border: double 10px black;
+        border-radius: 5%;
+    }
+    
+    
     .main__section--grid{
         display: grid;
         grid-template-areas:"Envios"
@@ -366,8 +394,13 @@ footer section section ul li{
     }
 
 
+    .main__cat{
+        width: 100%
+    }
+
+
     footer{
-        background-color: blueviolet;
+        background-image: linear-gradient(violet, blueviolet);
         display: grid;
         grid-template-areas:"Redes" 
                             "Locales"
@@ -386,6 +419,10 @@ footer section section ul li{
     }
 
 
+    .logo__redes{
+        text-align: center;
+    }
+
 
     .footer__section--locales{
         grid-area: Locales;
@@ -398,7 +435,7 @@ footer section section ul li{
 
     footer section h4{
         color: white;
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 1%;
         padding-right: 3%;
     }
