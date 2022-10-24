@@ -78,6 +78,7 @@ header nav ul li{
     list-style-type: none;
     background-color: rgb(87, 0, 168);
     border-radius: 15%;
+    text-align: center;
 }
 
 
@@ -101,22 +102,18 @@ main{
 
 .section__prod{
     grid-area: Prod;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-areas: "Pro Cat";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 
 .galeria__main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-}
-
-
-.galeria__main--style{
-    padding: 2%;
+    align-items: center;
 }
 
 
@@ -133,16 +130,19 @@ main{
 }
 
 
+.main__img{
+    text-align: center;
+}
+
+
 .main__img--pro{
-    width: 100%;
-    border: double 10px black;
+    width: 60%;
     border-radius: 5%;
 }
 
 
 .main__img--cat{
-    width: 100%;
-    border: double 10px black;
+    width: 55%;
     border-radius: 5%;
 }
 
@@ -174,11 +174,6 @@ main{
 }
 
 
-.main__envios--img{
-    padding: 2%;
-}
-
-
 .main__section--tienda{
     background-color: rgb(120, 6, 226);
     grid-area: Tienda;
@@ -188,8 +183,9 @@ main{
 }
 
 
-.main__tienda--img{
-    padding: 2%;
+.main__servis--img{
+    width: 25%;
+    padding: 5%;
 }
 
 
@@ -199,6 +195,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     width: 50%;
+    padding: 2%;
 }
 
 
@@ -216,7 +213,7 @@ main{
 
 
 main section section section p{
-    padding: 5%;
+   
     font-size: 1rem;
     display: flex;
     justify-content: flex-start;
@@ -225,9 +222,7 @@ main section section section p{
 }
 
 
-main section section section img{
-    width: 15%;
-}
+
 
 /*FOOTER*/
 
@@ -325,13 +320,23 @@ footer section section ul li{
     }
 
 
+    .icono__header--style{
+        width: 100%;   
+    }
+
+
+    .nombre__header--style{
+        color: white;
+        font-size: 5rem;
+    }
+
+
     header div{
         grid-area: Título;
         background-image: linear-gradient(blueviolet, violet);
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5%;
     }
 
 
@@ -348,8 +353,14 @@ footer section section ul li{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 5%;
-        padding: 4%;
+    }
+
+
+    header nav ul li{
+        list-style-type: none;
+        background-color: rgb(87, 0, 168);
+        border-radius: 15%;
+        padding: 2%;
     }
 
 
@@ -362,25 +373,13 @@ footer section section ul li{
     }
 
 
-    .galeria__main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .main__img--pro{
-        width: 100%;
-        border: double 10px black;
-        border-radius: 5%;
-    }
-    
-    
-    .main__img--cat{
-        width: 100%;
-        border: double 10px black;
-        border-radius: 5%;
+    .section__prod{
+        grid-area: Prod;
+        display: grid;
+        grid-template-areas: "Pro"
+                             "Cat";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     
     
@@ -395,7 +394,28 @@ footer section section ul li{
 
 
     .main__cat{
-        width: 100%
+        width: 96%;
+        height: 20%;
+    }
+
+
+    .main__cat--img{
+        width: 22%;
+        padding: 3%;
+    }
+
+
+    .cont__titulo{
+        font-size: 2rem;
+        padding: 3%;
+    }
+
+
+    
+    .form__btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
 
@@ -447,12 +467,192 @@ footer section section ul li{
         padding: 1%;
         padding-right: 3%;
     }
-
-
-
-
 }
 
+/*MAIN*/
+
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+
+.adn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.adn__titulo{
+    padding: 4%;
+}
+
+
+.adn__titulo--style{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+
+.adn__parrafo--style{
+    background-color: blueviolet;
+    border-radius: 5%;
+    padding: 4%;
+    margin: 6%;
+    line-height: 1.5;
+    border: solid black 1px;
+}
+
+
+/*MAIN*/
+
+
+.main__cont--titulo{
+    text-align: center;
+}
+
+
+.cont__titulo{
+    font-size: 2rem;
+}
+
+
+.form__style{
+    background-color: blueviolet;
+    margin: 2%;
+    border-radius: 5%;
+}
+
+
+.form__sex{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    padding: 3%;
+}
+
+
+.sexualidad{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+.sex__style{
+    font-size: 1.5rem;
+}
+
+
+.form__dp{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.form__dp--style{
+   padding: 1%;
+}
+
+
+.na__style{
+    font-size: 1.5rem; 
+    position: relative;
+    right: 10%;
+}
+
+
+.na__style--input{
+    position: relative;
+    right: 1%;
+}
+
+
+.fn__style{
+    font-size: 1.5rem; 
+    position: relative;
+    right: 20%;
+}
+
+
+.fn__style--input{
+    position: relative;
+    right: 14%;
+}
+
+
+.email__style{
+    font-size: 1.5rem; 
+    position: relative;
+    right: 5%;
+}
+
+
+.email__style--input{
+    position: relative;
+    left: 5%;
+}
+
+
+.contraseña__style{
+    font-size: 1.5rem; 
+    position: relative;
+    right: 11%;
+}
+
+
+.contraseña__style--input{
+    position: relative;
+    right: 2%;
+}
+
+
+.form__tc{
+    text-align: center;
+    padding: 4%;
+}
+
+
+.tc__style{
+    font-size: 1.5rem;
+}
+
+
+.textarea{
+    font-size: 1.5rem;
+}
+
+
+.textarea__style{
+    width: 100%;
+    border: none;
+}
+
+
+.form__btn{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    padding: 2%;
+}
+
+
+.btn__rest{
+    font-size: 1rem;
+    padding: 5%;
+}
+
+
+.btn__enviar{
+    font-size: 1rem;
+    padding: 8%;
+}
 
 
     

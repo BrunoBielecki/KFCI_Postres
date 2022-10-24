@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../elementos/iconos/icono_favicon_gif.gif" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /-->
 </head>
 <body>
     <header>
@@ -28,15 +27,80 @@
             <ul>
                 <li><a href="../index.html"> Inicio</a></li>
                 <li><a href="./productos.html"> Productos</a></li>
+                <li><a href="./catering.html"> Catering</a></li>
                 <li><a href="./contactos.html"> Contactos</a></li>
                 <li><a href="./acerca_de_nosotros.html"> Acerca de Nosotros</a></li>
             </ul>            
         </nav>
     </header>
+    <main>
+      <section>
+        <section class="main__cont--titulo">
+          <h2 class="cont__titulo">Formulario</h2>
+        </section>
+        <section>
+          <form class="form__style" action="">
+            <section class="form__sex">
+              <section class="sexualidad">
+                <label class="sex__style" for="sexo_m"> Masculino </label>
+                <input type="radio" name="sexo" id="sexo_m">
+              </section>
+              <section class="sexualidad">
+                <label class="sex__style" for="sexo_f"> Femenino </label>
+                <input type="radio" name="sexo" id="sexo_f">
+              </section>
+            </section>
+            <section class="form__dp">
+              <section class="form__dp--style"> 
+                <label class="na__style" for="Nombre/s"> Nombre/s</label>
+                <input type="text" id="Nombre/s">
+              </section>
+              <section class="form__dp--style">
+                <label class="na__style" for="Apellido/s"> Apellido/s</label>
+                <input class="na__style--input" type="text" id="Apellido/s">
+              </section>
+              <section class="form__dp--style">
+                <label class="fn__style" for="FN"> Fecha de nacimineto</label>
+                <input class="fn__style--input" type="month" id="FN">
+              </section>
+              <section class="form__dp--style">
+                <label class="email__style" for="e-mail"> E-mail</label>
+                <input class="email__style--input" type="email" name="" id="e-mail">
+              </section>
+              <section class="form__dp--style">
+                <label class="contraseña__style" for="contra"> Contraseña</label>
+                <input class="contraseña__style--input" type="password" name="" id="contra">
+              </section>
+            </section>
+              <section class="form__tc"">
+                <label class="tc__style" for="TC"> Terminos y condiciones</label>
+                <input type="checkbox" name="" id="TC">
+              </section>
+            <section>
+              <fieldset >
+                <legend class="textarea"> Cuentanos</legend>
+                <label for="cuentanos"></label>
+                <textarea class="textarea__style" name="cuentanos" id="cuentanos" cols="100" rows="10"></textarea>
+              </fieldset>
+            </section>
+            <section class="form__btn">
+              <section>
+                <label  for="restablecer"></label>
+                <input class="btn__rest" type="reset" value="Restablecer" id="restablecer">
+              </section>
+              <section>
+                <label for="enviar"></label>
+                <input class="btn__enviar" type="submit" value="Enviar" id="enviar">
+              </section>
+            </section>
+          </form>
+        </section>
+      </section>
+    </main>
     <footer>
         <Section class="footer__section--redes">
           <h3>Redes Sociales</h3>
-          <section>
+          <section class="logo__redes wow flipInX">
             <a href="https://www.facebook.com/"> 
               <img src="../elementos/iconos/facebook.png" alt=""> 
             </a>
