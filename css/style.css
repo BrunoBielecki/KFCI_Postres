@@ -433,6 +433,14 @@ footer section section ul li{
     }
 
 
+    footer section h3{
+        padding: 5%;
+        padding-left: 5%;
+        color: white;
+        font-size: 1rem;
+    }
+
+
     footer section h4{
         color: white;
         font-size: 2rem;
