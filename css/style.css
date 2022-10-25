@@ -91,7 +91,7 @@ header nav ul li a{
 
 /*MAIN*/
 
-main{
+.main__grid{
     background-image: linear-gradient(violet, blueviolet);
     display: grid;
     grid-template-areas:"Prod"
@@ -364,7 +364,7 @@ footer section section ul li{
     }
 
 
-    main{
+    .main__grid{
         background-image: linear-gradient(blueviolet, violet);
         display: grid;
         grid-template-areas:"Prod"
@@ -411,11 +411,44 @@ footer section section ul li{
     }
 
 
+    .main__adn{
+        background-image: linear-gradient(blueviolet, violet)
+    }
+
+
+    .adn__parrafo--style{
+        text-align: center;
+        background-color: blueviolet;
+        border-radius: 5%;
+        padding: 4%;
+        margin: 6%;
+        line-height: 1.5;
+        border:double rgb(0, 0, 0) 10px;
+    }
+
+
+    .main__c{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+
     
     .form__btn{
         display: flex;
-        flex-direction: row;
+        
         align-items: center;
+    }
+
+
+    .fn__style{
+        font-size: 1rem; 
+        position: relative;
+        right: 20%;
+    }
+    
+    
+    .fn__style--input{
+        position: relative;
+        right: 25%;
     }
 
 
@@ -469,12 +502,11 @@ footer section section ul li{
     }
 }
 
-/*MAIN*/
+/*MAIN  ACERCA DE NOSOTROS*/
 
 
-main{
-    width: 100%;
-    height: auto;
+.main__adn{
+    background-image: linear-gradient(violet, blueviolet);
 }
 
 
@@ -504,11 +536,15 @@ main{
     padding: 4%;
     margin: 6%;
     line-height: 1.5;
-    border: solid black 1px;
+    border:double rgb(0, 0, 0) 10px;
 }
 
 
-/*MAIN*/
+/*MAIN CONTACTOS*/
+
+.main__c{
+    background-image: linear-gradient(violet, blueviolet);
+}
 
 
 .main__cont--titulo{
@@ -521,9 +557,15 @@ main{
 }
 
 
+.form{
+    padding: 2%;
+}
+
+
 .form__style{
     background-color: blueviolet;
-    margin: 2%;
+    border: double black 10px;
+   
     border-radius: 5%;
 }
 
@@ -651,8 +693,48 @@ main{
 
 .btn__enviar{
     font-size: 1rem;
-    padding: 8%;
+    padding: 9%;
 }
+
+/*MAIN PRODUCTOS*/
+
+
+.main__pro{
+    background-image: linear-gradient(violet, blueviolet);
+}
+
+
+.main__pro--style{
+    display: grid;
+    grid-template-areas: "Tortas PP"
+                         "Roscas Postres";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.torta{
+    grid-area: Tortas;
+}
+
+
+.pp{
+    grid-area: PP;
+}
+
+
+.roscas{
+    grid-area: Roscas;
+}
+
+
+.postres{
+    grid-area: Postres;
+}
+
+
+
+
 
 
     
