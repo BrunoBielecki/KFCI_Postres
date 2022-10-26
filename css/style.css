@@ -309,9 +309,123 @@ footer section section ul li{
 }
 
 
+@media screen and (max-width: 688px) {
+
+    /*HEADER*/
+
+    header{
+        display: grid;
+        grid-template-areas:"Título"
+                            "Navegación";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+
+    .icono__header--style{
+        width: 100%;   
+    }
+
+
+    .nombre__header--style{
+        color: white;
+        font-size: 5rem;
+    }
+
+
+    header div{
+        grid-area: Título;
+        background-image: linear-gradient(blueviolet, violet);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    header nav{
+        grid-area: Navegación;
+        background-image: linear-gradient(violet, blueviolet);
+        height: 100%;
+    }
+
+
+    header nav ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    header nav ul li{
+        list-style-type: none;
+        background-color: rgb(87, 0, 168);
+        border-radius: 15%;
+        padding: 2%;
+    }
+
+    /*MAIN PRODUCTOS*/
+
+    .main__pro{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+
+    /*FOOTER*/
+
+    footer{
+        background-image: linear-gradient(violet, blueviolet);
+        display: grid;
+        grid-template-areas:"Redes" 
+                            "Locales"
+                            "Derechos"; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+    .footer__section--redes{
+        grid-area: Redes;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .logo__redes{
+        text-align: center;
+    }
+
+
+    .footer__section--locales{
+        grid-area: Locales;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    footer section h3{
+        padding: 5%;
+        padding-left: 5%;
+        color: white;
+        font-size: 1rem;
+    }
+
+
+    footer section h4{
+        color: white;
+        font-size: 2rem;
+        padding: 1%;
+        padding-right: 3%;
+    }
+}
+
+
 @media screen and (max-width:400px) {
     header{
-
         display: grid;
         grid-template-areas:"Título"
                             "Navegación";
@@ -450,6 +564,15 @@ footer section section ul li{
         position: relative;
         right: 25%;
     }
+
+
+    /*MAIN PRODUCTOS*/
+
+    .main__pro{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+    
+    /*FOOTER*/
 
 
     footer{
@@ -704,32 +827,123 @@ footer section section ul li{
 }
 
 
+.card__pro{
+    padding: 2%;
+
+}
+
+
 .main__pro--style{
-    display: grid;
-    grid-template-areas: "Tortas PP"
-                         "Roscas Postres";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 2%;
 }
 
 
-.torta{
-    grid-area: Tortas;
+#pro__card{
+    background-color: blueviolet;
+    border-radius: 5%; 
+    border: double black 10px;
 }
 
 
-.pp{
-    grid-area: PP;
+#img__tiramisu{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
 }
 
 
-.roscas{
-    grid-area: Roscas;
+.card-title{
+    font-size: 2rem;
+    padding: 1%;
 }
 
 
-.postres{
-    grid-area: Postres;
+.card__a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.card{
+    text-align: center;
+}
+
+
+#img__lemonpie{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+
+#img__chescake{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+
+#img__chocotorta{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+
+#img__tortanegra{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+
+#img__chaja{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+
+#img__tho{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+
+#img__brauni{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+
+#img__mc{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+
+#img__coulant{
+    width: 100%;
+    height: 190px;
+    padding: 2%;
+    border-radius: 5%;
 }
 
 
