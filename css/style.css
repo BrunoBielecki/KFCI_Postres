@@ -222,8 +222,6 @@ main section section section p{
 }
 
 
-
-
 /*FOOTER*/
 
 footer{
@@ -309,6 +307,353 @@ footer section section ul li{
 }
 
 
+@media screen and (max-width: 900px) {
+
+    /*HEADER*/
+
+    header{
+        display: grid;
+        grid-template-areas:"Título"
+                            "Navegación";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+
+    .icono__header--style{
+        width: 100%;   
+    }
+
+
+    .nombre__header--style{
+        color: white;
+        font-size: 5rem;
+    }
+
+
+    header div{
+        grid-area: Título;
+        background-image: linear-gradient(blueviolet, violet);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    header nav{
+        grid-area: Navegación;
+        background-image: linear-gradient(violet, blueviolet);
+        height: 100%;
+    }
+
+
+    header nav ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    header nav ul li{
+        list-style-type: none;
+        background-color: rgb(87, 0, 168);
+        border-radius: 15%;
+        padding: 2%;
+    }
+
+    /*MAIN INICIO*/
+
+    .main__grid{
+        background-image: linear-gradient(blueviolet, violet);
+        display: grid;
+        grid-template-areas:"Prod"
+                            "Servis";
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+
+    .section__prod{
+        grid-area: Prod;
+        display: grid;
+        grid-template-areas: "Pro"
+                             "Cat";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    
+    .main__section--grid{
+        display: grid;
+        grid-template-areas:"Envios"
+                            "Tienda";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+
+
+    .main__img--cat{
+        width: 48%;
+        border-radius: 5%;
+    }
+
+
+    .main__cat{
+        width: 96%;
+        height: 30%;
+    }
+
+
+    .main__cat--img{
+        width: 22%;
+        padding: 3%;
+    }
+
+    /*MAIN PRODUCTOS*/
+
+    .main__pro{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+
+    /*MAIN CATERING*/
+
+    .main__pro{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+
+    /*FOOTER*/
+
+    footer{
+        background-image: linear-gradient(violet, blueviolet);
+        display: grid;
+        grid-template-areas:"Redes" 
+                            "Locales"
+                            "Derechos"; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+    .footer__section--redes{
+        grid-area: Redes;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .logo__redes{
+        text-align: center;
+    }
+
+
+    .footer__section--locales{
+        grid-area: Locales;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    footer section h3{
+        padding: 5%;
+        padding-left: 5%;
+        color: white;
+        font-size: 1rem;
+    }
+
+
+    footer section h4{
+        color: white;
+        font-size: 2rem;
+        padding: 1%;
+        padding-right: 3%;
+    }
+
+    
+}
+
+@media screen and (max-width: 717px) {
+
+    /*HEADER*/
+
+    header{
+        display: grid;
+        grid-template-areas:"Título"
+                            "Navegación";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+
+    .icono__header--style{
+        width: 100%;   
+    }
+
+
+    .nombre__header--style{
+        color: white;
+        font-size: 5rem;
+    }
+
+
+    header div{
+        grid-area: Título;
+        background-image: linear-gradient(blueviolet, violet);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    header nav{
+        grid-area: Navegación;
+        background-image: linear-gradient(violet, blueviolet);
+        height: 100%;
+    }
+
+
+    header nav ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    header nav ul li{
+        list-style-type: none;
+        background-color: rgb(87, 0, 168);
+        border-radius: 15%;
+        padding: 2%;
+    }
+
+    /*MAIN INICIO*/
+
+    .main__grid{
+        background-image: linear-gradient(blueviolet, violet);
+        display: grid;
+        grid-template-areas:"Prod"
+                            "Servis";
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+
+    .section__prod{
+        grid-area: Prod;
+        display: grid;
+        grid-template-areas: "Pro"
+                             "Cat";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    
+    .main__section--grid{
+        display: grid;
+        grid-template-areas:"Envios"
+                            "Tienda";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+
+
+    .main__img--cat{
+        width: 55%;
+        border-radius: 5%;
+    }
+
+
+    .main__cat{
+        width: 96%;
+        height: 22%;
+    }
+
+
+    .main__cat--img{
+        width: 22%;
+        padding: 3%;
+    }
+
+    /*MAIN PRODUCTOS*/
+
+    .main__pro{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+
+    /*MAIN ACERCA DE NOSOTROS*/
+
+    .main__adn{
+        background-image: linear-gradient(blueviolet, violet)
+    }
+
+    /*MAIN CATERING*/
+
+    .main__pro{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+
+    /*FOOTER*/
+
+    footer{
+        background-image: linear-gradient(violet, blueviolet);
+        display: grid;
+        grid-template-areas:"Redes" 
+                            "Locales"
+                            "Derechos"; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+    .footer__section--redes{
+        grid-area: Redes;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .logo__redes{
+        text-align: center;
+    }
+
+
+    .footer__section--locales{
+        grid-area: Locales;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    footer section h3{
+        padding: 5%;
+        padding-left: 5%;
+        color: white;
+        font-size: 1rem;
+    }
+
+
+    footer section h4{
+        color: white;
+        font-size: 2rem;
+        padding: 1%;
+        padding-right: 3%;
+    }
+
+    
+}
+
+
 @media screen and (max-width: 688px) {
 
     /*HEADER*/
@@ -365,7 +710,68 @@ footer section section ul li{
         padding: 2%;
     }
 
+    
+    /*MAIN INICIO*/
+
+    .main__grid{
+        background-image: linear-gradient(blueviolet, violet);
+        display: grid;
+        grid-template-areas:"Prod"
+                            "Servis";
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+
+    .section__prod{
+        grid-area: Prod;
+        display: grid;
+        grid-template-areas: "Pro"
+                             "Cat";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    
+    .main__section--grid{
+        display: grid;
+        grid-template-areas:"Envios"
+                            "Tienda";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+
+
+    .main__img--cat{
+        width: 60%;
+        border-radius: 5%;
+    }
+
+
+    .main__cat{
+        width: 96%;
+        height: 20%;
+    }
+
+
+    .main__cat--img{
+        width: 22%;
+        padding: 3%;
+    }
+
     /*MAIN PRODUCTOS*/
+
+    .main__pro{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+
+    /*MAIN ACERCA DE NOSOTROS*/
+
+    .main__adn{
+        background-image: linear-gradient(blueviolet, violet)
+    }
+
+    /*MAIN CATERING*/
 
     .main__pro{
         background-image: linear-gradient(blueviolet, violet);
@@ -425,6 +831,9 @@ footer section section ul li{
 
 
 @media screen and (max-width:400px) {
+
+    /*HEADER*/
+
     header{
         display: grid;
         grid-template-areas:"Título"
@@ -477,6 +886,8 @@ footer section section ul li{
         padding: 2%;
     }
 
+    /*MAIN INICIO*/
+
 
     .main__grid{
         background-image: linear-gradient(blueviolet, violet);
@@ -507,6 +918,12 @@ footer section section ul li{
     }
 
 
+    .main__img--cat{
+        width: 60%;
+        border-radius: 5%;
+    }
+
+
     .main__cat{
         width: 96%;
         height: 20%;
@@ -518,12 +935,40 @@ footer section section ul li{
         padding: 3%;
     }
 
+    /*MAIN CONTACTOS*/
 
     .cont__titulo{
         font-size: 2rem;
         padding: 3%;
     }
 
+
+    .main__c{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+
+    
+    .form__btn{
+        display: flex;
+        
+        align-items: center;
+    }
+
+
+    
+    .fn__style{
+        font-size: 1rem; 
+        position: relative;
+        right: 20%;
+    }
+    
+    
+    .fn__style--input{
+        position: relative;
+        right: 25%;
+    }
+
+    /*MAIN ADEMAS DE NOSOTROS*/
 
     .main__adn{
         background-image: linear-gradient(blueviolet, violet)
@@ -540,33 +985,25 @@ footer section section ul li{
         border:double rgb(0, 0, 0) 10px;
     }
 
+    /*MAIN PRODUCTOS*/
+
+    .main__pro{
+        background-image: linear-gradient(blueviolet, violet);
+    }
+
+    /*MAIN CONTACTOS*/
 
     .main__c{
         background-image: linear-gradient(blueviolet, violet);
     }
 
-    
-    .form__btn{
-        display: flex;
-        
-        align-items: center;
-    }
-
-
     .fn__style{
-        font-size: 1rem; 
+        font-size: 1.5rem; 
         position: relative;
-        right: 20%;
-    }
-    
-    
-    .fn__style--input{
-        position: relative;
-        right: 25%;
+        left: 3%;
     }
 
-
-    /*MAIN PRODUCTOS*/
+    /*MAIN CATERING*/
 
     .main__pro{
         background-image: linear-gradient(blueviolet, violet);
@@ -649,7 +1086,7 @@ footer section section ul li{
 .adn__titulo--style{
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size:4rem;
 }
 
 
@@ -676,7 +1113,7 @@ footer section section ul li{
 
 
 .cont__titulo{
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 
@@ -742,13 +1179,12 @@ footer section section ul li{
 .fn__style{
     font-size: 1.5rem; 
     position: relative;
-    right: 20%;
 }
 
 
 .fn__style--input{
     position: relative;
-    right: 14%;
+    left: 18%;
 }
 
 
@@ -761,7 +1197,7 @@ footer section section ul li{
 
 .email__style--input{
     position: relative;
-    left: 5%;
+    left: 6%;
 }
 
 
@@ -946,7 +1382,54 @@ footer section section ul li{
     border-radius: 5%;
 }
 
+/*MAIN CATERING*/
 
+.main__catering{
+    background-image: linear-gradient(violet, blueviolet);
+    padding: 2%;
+}
+
+
+.main__catering--style{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    gap: 5%;
+}
+
+
+.card__img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+
+.card__img--style{
+    width: 100%;
+    border-radius: 5%;
+}
+
+
+.card__list{
+    list-style-type: none;
+    padding: 5%;
+}
+
+
+.card__titulo{
+    text-align: center;
+    padding: 5%;
+}
+
+
+.card__cat{
+    background-color: blueviolet;
+    border-radius: 5%;
+    border: double black 10px;
+    padding: 2%;
+}
 
 
 
